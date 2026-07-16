@@ -11,6 +11,7 @@ HDMI (PC) → USB Capture Card → RPi 5 → [capture → model → overlay] →
 ```
 <img width="2720" height="1680" alt="Image" src="https://github.com/user-attachments/assets/2796e083-c72d-4797-bdfb-43fb2cd7b45a" />
 
+<img width="2720" height="1120" alt="Image" src="https://github.com/user-attachments/assets/0f56dbb4-bc7a-4846-b4bf-87773fa11b23" />
 Your PC has no idea the Pi is there - it just outputs video as usual. All the processing happens in the gap between the capture card and the monitor. Capture and output go straight through GStreamer (not `cv2.VideoCapture` - its internal buffering alone adds a few frames of lag), and `opencv` is only used for frame math.
 
 ## Project structure
