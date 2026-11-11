@@ -1,5 +1,4 @@
 # VideoStreamBridge
-
 An HDMI overlay bridge for Raspberry Pi 5: captures video from your main PC, runs AI overlay graphics on top of it, and pushes it back out to the monitor. Target is under 50ms of latency, so the whole architecture is built around that, not around clean code.
 
 > **Status: untested on real hardware.** The pipeline is written and should work based on how each piece behaves in isolation, but I don't currently have a Pi to run it end-to-end and check the real numbers. If you try it on actual hardware - working or not - I'd genuinely appreciate hearing about it. Open an issue with your setup (Pi model, capture card, GStreamer version) and whatever latency/errors you're seeing. Bug reports are just as useful as "it works."
